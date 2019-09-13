@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Tree from './tree';
-import {NodeInfo, TreeNodeType} from './treetypes';
+import {TreeNodeType} from './treetypes';
 
 function TreeNode({ data }: TreeNodeType) {
   
