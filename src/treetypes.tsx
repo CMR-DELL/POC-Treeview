@@ -2,14 +2,19 @@ export interface TreeView {
     data?: NodeInfo[];
 }
 
- export interface TreeNodeType {
+export interface TreeNodeType {
     data: NodeInfo;
 }
-  
+
+export interface TreeNodeIconType {
+    type: string;
+    vmStatus?:string;
+}
+
 export interface NodeInfo
 {
     id: number, 
     name: string,
-	nodeType: string,
-    children: NodeInfo[],
+    icon:TreeNodeIconType
+    children?: NodeInfo[],
 }

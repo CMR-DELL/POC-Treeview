@@ -10,7 +10,7 @@ function Tree({ data }: TreeView) {
   return (
     <ul>
       {data.map((entry, index) =>(
-        <TreeNode data={entry} />
+        <TreeNode key={entry.id} data={entry} />
       ))}
     </ul>
   );
