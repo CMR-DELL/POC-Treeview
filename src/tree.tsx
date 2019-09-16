@@ -1,19 +1,24 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import TreeNode from './treenode';
-import {TreeView} from './treetypes';
+import {TreeView, NodeInfo} from './treetypes';
 
 
-function Tree({ data }: TreeView) {
-  if(!data)  
+function Tree({ nodes }: TreeView) {
+
+  if(!nodes)  
     return <></>;
+        
     
+   
   return (
     <ul>
-      {data.map((entry, index) =>(
+      {nodes.map((entry, index) =>(
         <TreeNode key={entry.id} data={entry} />
       ))}
     </ul>
   );
 }
+
+
 
 export default Tree;
