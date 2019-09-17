@@ -1,0 +1,336 @@
+{
+    "id": 52815,
+    "level": 1,
+    "projectId": 52815,
+    "treeNodes": [
+        {
+            "id": 0,
+            "name": "vSAN 6.5 Datacenter",
+            "isRunning": null,
+            "currentCheckedState": "PartialCheck",
+            "level": 2,
+            "child": [
+                {
+                    "id": 11604,
+                    "name": "vSAN 6.5 Cluster",
+                    "isRunning": null,
+                    "currentCheckedState": "PartialCheck",
+                    "level": 3,
+                    "child": [
+                        {
+                            "id": 26169,
+                            "name": "100.84.237.104",
+                            "isRunning": null,
+                            "currentCheckedState": "Checked",
+                            "level": 4,
+                            "child": [
+                                {
+                                    "id": 37169,
+                                    "name": "WIN2K8R2VCENTER (.237.75)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 26170,
+                            "name": "100.84.237.60",
+                            "isRunning": null,
+                            "currentCheckedState": "PartialCheck",
+                            "level": 4,
+                            "child": [
+                                {
+                                    "id": 37170,
+                                    "name": "ESX4.1_Host (.237.64)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37171,
+                                    "name": "ESX4.1_Host2 (.237.57)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37172,
+                                    "name": "TestSqueeze",
+                                    "isRunning": false,
+                                    "currentCheckedState": "UnChecked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37173,
+                                    "name": "2008R2-vc41u3 (.237.61)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 0,
+            "name": "Datacenter",
+            "isRunning": null,
+            "currentCheckedState": "PartialCheck",
+            "level": 2,
+            "child": [
+                {
+                    "id": 11605,
+                    "name": "vCenter 6.5 Cluster",
+                    "isRunning": null,
+                    "currentCheckedState": "PartialCheck",
+                    "level": 3,
+                    "child": [
+                        {
+                            "id": 26172,
+                            "name": "100.84.237.101",
+                            "isRunning": null,
+                            "currentCheckedState": "PartialCheck",
+                            "level": 4,
+                            "child": [
+                                {
+                                    "id": 37174,
+                                    "name": "dpack-SLES10x86  (.237.122)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37175,
+                                    "name": "SCVMM R2 (.237.20)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37176,
+                                    "name": "VCENTER55BETA (.237.80) (primary)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37177,
+                                    "name": "dpack-rhel7x64  (.237.21)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37178,
+                                    "name": "dpack-2008r2core (.237.19)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37179,
+                                    "name": "dpack-rhel55x86 (.237.119)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37180,
+                                    "name": "dpack-CentOS48x64 (.237.124)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37181,
+                                    "name": "dpack-solaris11x86 (.237.106)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37182,
+                                    "name": "DataONTAP",
+                                    "isRunning": false,
+                                    "currentCheckedState": "UnChecked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37183,
+                                    "name": "dpack-rhel36 (.237.117)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37184,
+                                    "name": "dpack-solaris10x86 (.237.107)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37185,
+                                    "name": "dpack-ws2012-dc2 (.237.112)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37186,
+                                    "name": "dpack-gentoo12x64 (.237.123)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": 26173,
+                            "name": "100.84.237.102",
+                            "isRunning": null,
+                            "currentCheckedState": "PartialCheck",
+                            "level": 4,
+                            "child": [
+                                {
+                                    "id": 37187,
+                                    "name": "dpack-ubuntu1204-LTS (.237.9)",
+                                    "isRunning": false,
+                                    "currentCheckedState": "UnChecked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37188,
+                                    "name": "NW-vproxy-2.3.0-52",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37189,
+                                    "name": "dpack-centos510x86 (.237.11)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37190,
+                                    "name": "dpack-rhel65x64 (.237.121)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37191,
+                                    "name": "dpack-Win2000",
+                                    "isRunning": false,
+                                    "currentCheckedState": "UnChecked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37192,
+                                    "name": "dpack-SLES11x64 (.237.108)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37193,
+                                    "name": "vCenter 6.5 Appliance (.237.109)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37194,
+                                    "name": "dpack-centos65-FR (.237.42)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37195,
+                                    "name": "dpack-rhel44 (.237.118)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37196,
+                                    "name": "dpack-2012r2core (.237.88)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37197,
+                                    "name": "dpack-rhel61x64 (.237.120)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37198,
+                                    "name": "2008R2-vCenter4.0 (.237.89)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37199,
+                                    "name": "W2k8R2-vcenter 4.1 (.237.65)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                },
+                                {
+                                    "id": 37200,
+                                    "name": "VCENTER55BETA (.237.80) (secondary)",
+                                    "isRunning": true,
+                                    "currentCheckedState": "Checked",
+                                    "level": 5,
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "documentVersion": "1.0.0.157-master"
+}

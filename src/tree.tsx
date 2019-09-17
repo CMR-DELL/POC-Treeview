@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TreeNode from './treenode';
-import {TreeView, NodeInfo} from './treetypes';
+import {TreeView} from './treetypes';
 
 
 function Tree({ nodes }: TreeView) {
@@ -13,7 +13,7 @@ function Tree({ nodes }: TreeView) {
   return (
     <ul>
       {nodes.map((entry, index) =>(
-        <TreeNode key={entry.id} data={entry} />
+        <TreeNode key={entry.id} data={entry} showChildren={entry.showChildren} />
       ))}
     </ul>
   );

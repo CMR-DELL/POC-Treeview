@@ -2,17 +2,15 @@ import * as React from 'react';
 import {CheckboxType} from './treetypes'
 
 
-const Checkbox = ({ checked, indeterminate = false, className = '', style = {}, disabled = false, onNodeCheck }: CheckboxType) => {
+const Checkbox = ({ checked, disabled = false, onNodeCheck }: CheckboxType) => {
   return (
     <input
       type="checkbox"
-      className={className}
-      style={style}
+      className=""      
       ref={input => {
         
         if (input) {
           input.checked = checked;
-          input.indeterminate = indeterminate as boolean;
           input.disabled = disabled as boolean;
         }
       }}
