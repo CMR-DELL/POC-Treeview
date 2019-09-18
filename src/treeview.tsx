@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Tree from './tree';
 import datafile from './data.json';
   
@@ -7,7 +7,9 @@ function TreeView() {
  
 
 	return (
-		<Tree nodes={datafile.treeNodes}   />
+    <div className="tree">      
+        <Tree nodes={datafile.treeNodes}   />      
+    </div>
   );
 }
 

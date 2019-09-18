@@ -1,16 +1,17 @@
-import React,{useState} from 'react';
+import * as React from 'react';
 import Tree from './tree';
 import Icon from './icon';
 import Checkbox from './checkbox';
 import ExpandCollapse from './expandcollapse';
-import {TreeType, NodeInfo} from './treetypes';
+import {TreeType,TreeNodeInfo} from './treetypes';
+import { useState } from 'react';
 
 function useForceUpdate(){
   const [value, set] = useState(true); //boolean state
   return () => set(value => !value); // toggle the state to force render
 }
 
-function TreeNode({ data }: TreeType) {  
+function TreeNode({parent, data }: TreeType) {  
   const [nodeInfo, setNodeInfo] = useState(data);
   const forceUpdate = useForceUpdate();
 
@@ -18,7 +19,7 @@ function TreeNode({ data }: TreeType) {
     return (status) ? 'Checked' : 'UnChecked';  
   }
 
-  function setAllChildrenCheckStatus(node : NodeInfo, status:boolean){    
+  function setAllChildrenCheckStatus(node : TreeNodeInfo, status:boolean){    
     if(node.child){
       node.child.forEach(element => {        
         element.currentCheckedState=getCheckboxStatus(status);
@@ -27,7 +28,7 @@ function TreeNode({ data }: TreeType) {
     }
   }
 
-  function handleNodeCheck(node:NodeInfo){  
+  function handleNodeCheck(node:TreeNodeInfo){  
     console.log(node);
     var currentStatus=(node.currentCheckedState==='UnChecked' || node.currentCheckedState==='PartialCheck');
     
@@ -38,16 +39,24 @@ function TreeNode({ data }: TreeType) {
     forceUpdate();
   }
 
-  function setChildrenVisible(node:NodeInfo){
+  function setChildrenVisible(node:TreeNodeInfo){
     var currentStatus=!node.showChildren;
       node.showChildren = currentStatus;
           
       setNodeInfo(node);
       forceUpdate();
   }
-
+  function getClassName(){
+    var cssClass='expand';
+    if(parent)
+    {
+      cssClass=(parent.showChildren)?"expand":"collapse";
+    }
+    return cssClass;
+  }
+  
   return (
-    <li>
+    <li className={getClassName()}>
       <ExpandCollapse Opened={nodeInfo.showChildren} onClick={e => {        
         if (handleNodeCheck) {
           setChildrenVisible(nodeInfo);
@@ -58,9 +67,9 @@ function TreeNode({ data }: TreeType) {
           handleNodeCheck(nodeInfo);
         }
       }} />      
-      <Icon type={nodeInfo.level} vmStatus={nodeInfo.isRunning} />
+      <Icon type={nodeInfo.nodeType} vmStatus={nodeInfo.isRunning} />
       { nodeInfo.name }
-      <Tree nodes={nodeInfo.child} />
+      <Tree parent={nodeInfo} nodes={nodeInfo.child} />
     </li>
   );  
 

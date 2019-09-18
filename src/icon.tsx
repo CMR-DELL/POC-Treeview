@@ -4,7 +4,7 @@ import {TreeNodeIconType} from './treetypes';
 function TreeNodeIcon( { type, vmStatus }: TreeNodeIconType) {  
   let className= (vmStatus) ? type +" "+ vmStatus : type;
   return (    
-    <i className={className.toString()}>{className} - </i> 
+    <i className={className}>{className} - </i> 
   );
 }
 

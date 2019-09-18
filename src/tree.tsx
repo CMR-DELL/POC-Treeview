@@ -1,19 +1,18 @@
-import React from 'react';
+import * as React from 'react';
 import TreeNode from './treenode';
 import {TreeView} from './treetypes';
 
 
-function Tree({ nodes }: TreeView) {
+function Tree({ parent, nodes }: TreeView) {
 
   if(!nodes)  
     return <></>;
         
-    
-   
+     
   return (
     <ul>
       {nodes.map((entry, index) =>(
-        <TreeNode key={entry.id} data={entry} showChildren={entry.showChildren} />
+        <TreeNode parent={parent} key={entry.id+index} data={entry} showChildren={entry.showChildren} />
       ))}
     </ul>
   );

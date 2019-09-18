@@ -1,14 +1,16 @@
 export interface TreeView {
-    nodes?: NodeInfo[];
+    nodes?: TreeNodeInfo[];
+    parent?:TreeNodeInfo;
 }
 
 export interface TreeType {
-    data: NodeInfo;    
+    parent?:TreeNodeInfo;
+    data: TreeNodeInfo;    
     showChildren?: boolean;
 }
 
 export interface TreeNodeIconType {
-    type: number;
+    type: string;
     vmStatus?:boolean;
 }
 
@@ -23,34 +25,20 @@ export interface ExpandCollapseType{
     onClick: (e:React.ChangeEvent<Element>) => void;
 }
 
-export interface NodeInfo
-{
-    id: number;
-    name: string;
-    isRunning?: any;//to remove
-    currentCheckedState: string;//to remove
-    level: number;    
-    child?: NodeInfo[],
-    showChildren?:boolean,
-    //checkStatus:CheckboxType,
-    // icon:TreeNodeIconType,
-    // showChildren:boolean,
-       
-}
 
-
-export interface TreeNode {
+export interface TreeNodeInfo {
     id: number;
     name: string;
     isRunning?: any;    
     nodeType: string;
     currentCheckedState: string;
-    child: NodeInfo[];
+    child: TreeNodeInfo[];
+    showChildren:boolean,
 }
 export interface TreeInfo {
     id: number;
     nodeType: number;
     projectId: number;
-    treeNodes: TreeNode[];
+    treeNodes: TreeNodeInfo[];
     documentVersion: string;
 }

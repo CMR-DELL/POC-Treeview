@@ -3,15 +3,14 @@ import {ExpandCollapseType} from './treetypes';
 
 
 const ExpandCollapse = (props : ExpandCollapseType) => {
-  //var text = (nodeInfo.currentCheckedState) ? "-": "+";
-  return (
-    <span>+</span>
+  var text = (props.Opened) ? "-": "+";
+  return (<span>{text}</span>);
     // <span onClick={e => {        
-    //   if (onClickEvent) {
-    //     onClickEvent(nodeInfo);
+    //   if (props.onClick) {
+    //     props.onClick(e);
     //   }
-    // }} >{text}</span>
-  );
+    // }}>{text}</span>    
+  
 };
 
 export default ExpandCollapse;
